@@ -1,0 +1,133 @@
+html{
+    position: relative;
+    padding-bottom: 120px;
+    min-height: 100vh;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand img{
+    margin-right: 10px;
+    width: 50px;
+}
+.navbar-nav .nav-link{
+    line-height: 45px;
+}
+.navbar-nav .cart{
+    background-color: #ffc107;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+}
+#products{
+    margin: 50px 0px;
+}
+
+#products .product-item{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px #00000036;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    position: relative;
+}
+#products .product-item .rating{
+    position: absolute;
+    background-color: white ;
+    top:10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#products .product-item .rating span{
+    color: #ffc107;
+    opacity: 0.3;
+    transition: all .3s ease;
+}
+#products .product-item .rating span.active{
+    opacity: 1;   
+}
+#products .product-item:hover{
+    transform: scale(1.03);
+}
+
+#products .product-item img{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+#products .product-item .product-item-inner{
+    padding: 0px 17px 17px 17px;
+}
+footer{
+    background: #F8F9FA;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+#cart{
+    margin: 50px 0px 20px;    
+
+}
+#cart .cart-item{
+    background-color: #F8F9FA;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#cart .cart-item span.remove{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ffc107;
+    color: black;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#cart .cart-item .name{
+    font-size: 35px;
+    font-weight: bolder;
+}
+#cart .cart-item .price{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+#cart .cart-item input{
+    text-align: center;
+    position: relative;
+}
+#cart .cart-item span.quantity{
+font-size: 12px;
+margin-top: 5px ;
+text-align: center;
+display: block;
+}
+.total-price{
+    text-align: right;
+}
+.total-price .price{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.pay-btn{
+    text-align: right;
+}
+.balance span{
+    position: relative;
+    top: -1px;
+}
