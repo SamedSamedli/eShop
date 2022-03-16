@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/eshop">
                 <img src="assets/img/icon.png">
                 eShop.com
             </a>
@@ -29,9 +29,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/eshop">Home</a>
                     <a class="nav-link balance">Balance: <span class="badge rounded-pill bg-success"><?php echo $_SESSION['balance'] ?>$</span></a>
-                    <a class="nav-link" href="/Cart.php">
+                    <a class="nav-link" href="/eshop/Cart.php">
                         <span class="cart">
                             🛒
                         </span>    

@@ -29,7 +29,7 @@ $items = explode("/", $cart);
                 echo '<span class="quantity">x ' . (($row['UnitType'] == 1) ? 'item' : 'kg') . '</span>';
                 echo '</div>';
                 echo '<div class="col-md-2 price">';
-                echo '<span>'.$row['UnitPrice'] .'</span> $';
+                echo '<span>' . $row['UnitPrice'] . '</span> $';
                 echo '</div>';
                 echo '</div>';
                 echo '<span data-id="' . $row['Id'] . '" class="remove">×</span>';
@@ -52,7 +52,7 @@ $items = explode("/", $cart);
                 </select>
                 <hr>
                 <p class="total-price">
-                    Total: 
+                    Total:
                     <span class="price text-success"></span>
                 </p>
                 <div class="pay-btn">

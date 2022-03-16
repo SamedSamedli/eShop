@@ -1,8 +1,8 @@
 <?php
-$user = 'username';
-$password = 'pass';
-$db = 'db';
-$host = 'mysql.zzz.com.ua';
+$user = 'root';
+$password = '';
+$db = 'eshop';
+$host = '127.0.0.1';
 $port = 3306;
 
 $link = mysqli_init();
