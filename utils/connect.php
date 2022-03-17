@@ -1,17 +1,29 @@
 <?php
-$user = 'root';
-$password = '';
-$db = 'eshop';
-$host = '127.0.0.1';
-$port = 3306;
+// $user = 'root';
+// $password = '';
+// $db = 'eshop';
+// $host = '127.0.0.1';
+// $port = 3306;
 
-$link = mysqli_init();
-$success = mysqli_real_connect(
-   $link,
-   $host,
-   $user,
-   $password,
-   $db,
-   $port
-);
+// $link = mysqli_init();
+// $success = mysqli_real_connect(
+//    $link,
+//    $host,
+//    $user,
+//    $password,
+//    $db,
+//    $port
+// );
+
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
 ?>
